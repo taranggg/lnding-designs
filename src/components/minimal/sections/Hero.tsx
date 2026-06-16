@@ -29,14 +29,12 @@ export const Hero = () => {
             maxWidth: "560px",
           }}
         >
-          Sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua ut enim ad minim veniam.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut
+          enim ad minim veniam.
         </p>
 
         <div className="flex items-center gap-3 flex-wrap justify-center mt-2">
-          <Button className="rounded-xl px-8 h-11 text-sm">
-            Get Started
-          </Button>
+          <Button className="rounded-xl px-8 h-11 text-sm">Get Started</Button>
           <Button
             variant="default"
             className="rounded-xl px-8 h-11 text-sm bg-slate-100/20 border border-slate-200 text-bg-foreground hover:bg-background "
@@ -62,7 +60,7 @@ export const Hero = () => {
         </div>
 
         <BrowserWindow
-          src="/shared/Blue_background_with_hanged_hand.jpeg"
+          src="/shared/extra/LinkFluence_hero1.avif"
           mediaType="image"
           height={750}
           framePadding="p-3 pt-10"

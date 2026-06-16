@@ -47,21 +47,22 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
           >
             <img
               src="/shared/logoipsum-350.svg"
-              alt="LinkFluence"
+              alt="logo"
               className="object-contain"
               style={{
                 height: secondFoldVisible ? "20px" : "24px",
                 transition: "height 0.5s ease",
               }}
             />
-            <span className="text-white text-sm font-semibold tracking-tight whitespace-nowrap">
-              LinkFluence
-            </span>
           </Link>
 
           {/* Right side */}
           <div className="flex items-center gap-2 flex-shrink-0">
-            <DesignSwitcher current="glass" theme="dark" className="hidden lg:inline-flex" />
+            <DesignSwitcher
+              current="glass"
+              theme="dark"
+              className="hidden lg:inline-flex"
+            />
 
             <Button
               variant="ghost"
