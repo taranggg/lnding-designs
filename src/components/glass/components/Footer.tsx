@@ -15,7 +15,8 @@ export const Footer = () => {
           className="relative flex-1 flex flex-col items-center justify-center overflow-hidden"
           style={{
             borderRadius: "20px",
-            backgroundImage: "url('/glass/Statue_carrying_smartphone_reel.jpeg')",
+            backgroundImage:
+              "url('/glass/Statue_carrying_smartphone_reel.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -62,7 +63,7 @@ export const Footer = () => {
           <div className="absolute bottom-0 left-0 right-0 border-t border-white/10">
             <div className="max-w-300 mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
               <div className="flex items-center gap-4">
-                <Logo src="/shared/logoipsum-351.svg" alt="LinkFluence" />
+                <Logo src="/shared/logoipsum-351.svg" alt="logo" />
                 <span>
                   © {new Date().getFullYear()} Your Brand | All Rights Reserved.
                 </span>
