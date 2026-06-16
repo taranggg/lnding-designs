@@ -51,7 +51,7 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
         <a href="/" className="flex items-center">
-          <Logo variant="dark" />
+          <Logo />
         </a>
 
         <nav className="hidden md:flex items-center gap-7">

@@ -91,10 +91,10 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center hover:opacity-80 transition-opacity flex-shrink-0 rounded-lg bg-white px-2 py-1.5"
+            className="flex items-center hover:opacity-80 transition-opacity flex-shrink-0"
           >
             <img
-              src="/logoipsum-395.svg"
+              src="/logoipsum-350.svg"
               alt="Logo"
               className="object-contain"
               style={{

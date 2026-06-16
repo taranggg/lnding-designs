@@ -62,7 +62,7 @@ export const Footer = () => {
           <div className="absolute bottom-0 left-0 right-0 border-t border-white/10">
             <div className="max-w-300 mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
               <div className="flex items-center gap-4">
-                <Logo variant="dark" />
+                <Logo src="/logoipsum-351.svg" />
                 <span>
                   © {new Date().getFullYear()} Your Brand | All Rights Reserved.
                 </span>

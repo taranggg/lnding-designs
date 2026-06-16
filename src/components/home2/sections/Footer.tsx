@@ -24,7 +24,7 @@ export const Footer = () => {
     <footer className="bg-[#0B0B0B] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-14">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 mb-10">
-          <Logo variant="dark" />
+          <Logo src="/logoipsum-351.svg" />
 
           <div className="flex flex-wrap gap-12">
             {columns.map((col) => (

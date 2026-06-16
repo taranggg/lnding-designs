@@ -3,14 +3,20 @@ import { cn } from "@/lib/utils";
 interface LogoProps {
   /** Dark variant wraps the mark in a white chip so it stays legible on dark/glass backgrounds. */
   variant?: "light" | "dark";
+  src?: string;
   className?: string;
   imgClassName?: string;
 }
 
-export const Logo = ({ variant = "light", className, imgClassName }: LogoProps) => {
+export const Logo = ({
+  variant = "light",
+  src = "/logoipsum-350.svg",
+  className,
+  imgClassName,
+}: LogoProps) => {
   const img = (
     <img
-      src="/logoipsum-395.svg"
+      src={src}
       alt="LinkFluence"
       className={cn("h-7 w-auto object-contain", imgClassName)}
     />
