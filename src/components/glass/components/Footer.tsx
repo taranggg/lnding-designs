@@ -52,7 +52,7 @@ export const Footer = () => {
             <BlobButton
               onClick={() => setInviteOpen(true)}
               size="lg"
-              className="px-10 py-3 text-base rounded-xl"
+              className="px-10 py-3 text-base rounded-lg"
               blobColor="bg-primary"
             >
               Get Started

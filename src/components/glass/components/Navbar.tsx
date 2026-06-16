@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { RequestInviteModal } from "./invite/RequestInviteModal";
 import { BlobButton } from "./BlobButton";
-import { DesignSwitcher } from "@/components/shared/DesignSwitcher";
+import { DesignTabs } from "@/components/shared/DesignTabs";
 
 interface NavbarProps {
   onSignInClick?: () => void;
@@ -29,7 +29,7 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
       {/* pt-10 gives more breathing room from the top; wider initial width */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-10 px-4 pointer-events-none">
         <div
-          className="pointer-events-auto flex items-center justify-between h-14 px-5 rounded-2xl transition-all duration-500 ease-in-out"
+          className="pointer-events-auto relative flex items-center justify-between h-14 px-5 rounded-2xl transition-all duration-500 ease-in-out"
           style={{
             background: "rgba(255, 255, 255, 0.06)",
             backdropFilter: "blur(24px) saturate(180%)",
@@ -56,14 +56,14 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
             />
           </Link>
 
+          <DesignTabs
+            current="glass"
+            theme="dark"
+            className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          />
+
           {/* Right side */}
           <div className="flex items-center gap-2 flex-shrink-0">
-            <DesignSwitcher
-              current="glass"
-              theme="dark"
-              className="hidden lg:inline-flex"
-            />
-
             <Button
               variant="ghost"
               onClick={onSignInClick}

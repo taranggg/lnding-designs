@@ -13,12 +13,13 @@ export const AudienceSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {audienceData.cards.map((card) => (
             <MediaCard
               key={card.label}
               imageSrc={card.churroSrc}
               imageAlt={card.label}
+              visualHeight={320}
               label={card.label}
               labelColor={card.labelColor}
               title={card.title}

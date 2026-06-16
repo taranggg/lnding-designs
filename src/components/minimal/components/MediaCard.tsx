@@ -7,7 +7,8 @@ import { cn } from "@/lib/utils";
 
 const variantStyles: Record<string, string> = {
   default: "border-[#e4e4e7] shadow-none",
-  elevated: "border-[#e4e4e7] shadow-[0_8px_32px_rgba(0,0,0,0.08),0_2px_8px_rgba(0,0,0,0.04)]",
+  elevated:
+    "border-[#e4e4e7] shadow-[0_8px_32px_rgba(0,0,0,0.08),0_2px_8px_rgba(0,0,0,0.04)]",
   flat: "border-transparent shadow-none bg-transparent",
 };
 
@@ -24,6 +25,8 @@ export interface MediaCardProps extends React.HTMLAttributes<HTMLDivElement> {
   imageAlt?: string;
   /** Height of the visual/image area in px. Defaults to 220 for `visual`, 300 for `imageSrc`. */
   visualHeight?: number;
+  /** When true, renders the image with padding and rounded corners instead of full-bleed. */
+  imageContained?: boolean;
 
   /** Coloured eyebrow label above the title. */
   label?: string;
@@ -57,6 +60,7 @@ export const MediaCard = React.forwardRef<HTMLDivElement, MediaCardProps>(
       imageSrc,
       imageAlt = "",
       visualHeight,
+      imageContained = false,
       label,
       labelColor,
       title,
@@ -80,7 +84,7 @@ export const MediaCard = React.forwardRef<HTMLDivElement, MediaCardProps>(
       <Card
         ref={ref}
         className={cn(
-          "rounded-3xl overflow-hidden flex flex-col h-full",
+          "rounded-3xl overflow-hidden flex flex-col h-full p-0 gap-0",
           variantStyles[variant],
           className,
         )}
@@ -88,12 +92,18 @@ export const MediaCard = React.forwardRef<HTMLDivElement, MediaCardProps>(
       >
         {/* ── Visual area ── */}
         {(visual || imageSrc) && (
-          <div style={{ height: `${topHeight}px`, flexShrink: 0 }}>
+          <div
+            style={{ height: `${topHeight}px`, flexShrink: 0 }}
+            className={cn(imageContained && "p-4")}
+          >
             {visual ?? (
               <img
                 src={imageSrc}
                 alt={imageAlt}
-                className="w-full h-full object-cover block"
+                className={cn(
+                  "w-full h-full object-cover block",
+                  imageContained && "rounded-2xl object-top shadow-xl",
+                )}
               />
             )}
           </div>
@@ -101,7 +111,10 @@ export const MediaCard = React.forwardRef<HTMLDivElement, MediaCardProps>(
 
         {/* ── Content area ── */}
         <CardContent
-          className={cn("flex flex-col flex-1 gap-5 px-8 py-8 border-t border-[#f0f0f2]", contentClassName)}
+          className={cn(
+            "flex flex-col flex-1 gap-5 px-8 pt-8 pb-5 border-t border-[#f0f0f2]",
+            contentClassName,
+          )}
           style={{ background: contentBackground }}
         >
           {children ?? (
@@ -131,7 +144,7 @@ export const MediaCard = React.forwardRef<HTMLDivElement, MediaCardProps>(
               )}
 
               {hasFooter && (
-                <div className="mt-1">
+                <div className="mt-auto pt-1">
                   {footer ?? (
                     <ShinyButton
                       gradientColors={["#c8d8f0", "#1e3a5f", "#c8d8f0"]}

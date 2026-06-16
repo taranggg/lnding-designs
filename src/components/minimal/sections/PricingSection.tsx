@@ -22,17 +22,34 @@ const PlanCard = ({
   cta,
   ctaFootnote,
   features,
-  featured,
   isComingSoon = false,
 }: PlanCardProps) => (
   <div
-    className="flex flex-col rounded-2xl p-7 gap-6"
+    className="grid grid-rows-[auto] md:grid-rows-subgrid md:row-[span_5] rounded-2xl p-9 gap-6 md:gap-0 transition-all duration-200 ease-out cursor-pointer select-none"
     style={{
-      background: featured ? "#ffffff" : "#fafafa",
-      border: featured ? "2px solid #1e3a5f" : "1px solid #e4e4e7",
-      boxShadow: featured
-        ? "0 8px 32px rgba(30,58,95,0.12), 0 2px 8px rgba(0,0,0,0.06)"
-        : "none",
+      background: "#fff",
+      border: "none",
+      boxShadow: "0 2px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05)",
+    }}
+    onMouseEnter={(e) => {
+      (e.currentTarget as HTMLDivElement).style.boxShadow =
+        "0 8px 28px rgba(0,0,0,0.11), 0 2px 8px rgba(0,0,0,0.07)";
+      (e.currentTarget as HTMLDivElement).style.transform = "translateY(-3px)";
+    }}
+    onMouseLeave={(e) => {
+      (e.currentTarget as HTMLDivElement).style.boxShadow =
+        "0 2px 12px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.05)";
+      (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
+    }}
+    onMouseDown={(e) => {
+      (e.currentTarget as HTMLDivElement).style.transform = "translateY(-1px)";
+      (e.currentTarget as HTMLDivElement).style.boxShadow =
+        "0 4px 16px rgba(0,0,0,0.09), 0 1px 4px rgba(0,0,0,0.06)";
+    }}
+    onMouseUp={(e) => {
+      (e.currentTarget as HTMLDivElement).style.transform = "translateY(-3px)";
+      (e.currentTarget as HTMLDivElement).style.boxShadow =
+        "0 8px 28px rgba(0,0,0,0.11), 0 2px 8px rgba(0,0,0,0.07)";
     }}
   >
     {/* Plan identity */}
@@ -44,7 +61,7 @@ const PlanCard = ({
     </div>
 
     {/* Price */}
-    <div className="flex flex-col gap-0.5">
+    <div className="flex items-baseline gap-2 py-3">
       <span
         className="font-semibold leading-none text-gray-900"
         style={{ fontSize: "clamp(2rem, 4vw, 2.75rem)" }}
@@ -63,9 +80,9 @@ const PlanCard = ({
       {isComingSoon ? (
         <div className="cursor-not-allowed w-full">
           <ShinyButton
-            gradientColors={["#c8d8f0", "#1e3a5f", "#c8d8f0"]}
-            className="w-full h-10 pointer-events-none"
-            innerClassName="bg-background text-foreground text-sm px-4 py-0"
+            gradientColors={["#d4d4d8", "#71717a", "#d4d4d8"]}
+            className="w-full h-10 pointer-events-none opacity-80"
+            innerClassName="bg-zinc-100 text-zinc-600 text-sm px-4 py-0"
           >
             Coming Soon
           </ShinyButton>
@@ -74,19 +91,20 @@ const PlanCard = ({
         <ShinyButton
           gradientColors={["#c8d8f0", "#1e3a5f", "#c8d8f0"]}
           className="w-full h-10"
-          innerClassName={
-            featured
-              ? "bg-primary text-primary-foreground text-sm px-4 py-0 group-hover:bg-primary/90 group-hover:text-primary-foreground"
-              : "bg-background text-foreground text-sm px-4 py-0 group-hover:bg-primary group-hover:text-primary-foreground"
-          }
+          innerClassName="bg-background text-foreground text-sm px-4 py-0"
         >
           {cta}
         </ShinyButton>
       )}
       {ctaFootnote && (
         <span
-          className="text-xs text-center hover:underline cursor-pointer"
-          style={{ color: "#71717a" }}
+          className="text-xs text-center hover:underline cursor-pointer mt-1"
+          style={{
+            color: "#1e3a5f",
+            display: "block",
+            paddingTop: "6px",
+            paddingBottom: "2px",
+          }}
         >
           {ctaFootnote}
         </span>
@@ -127,7 +145,7 @@ export const PricingSection = () => {
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-6 md:grid-rows-[repeat(5,auto)]">
           {pricingData.plans.map((plan) => (
             <PlanCard
               key={plan.id}

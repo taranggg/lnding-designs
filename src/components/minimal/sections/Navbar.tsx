@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Logo } from "@/components/shared/Logo";
-import { DesignSwitcher } from "@/components/shared/DesignSwitcher";
+import { DesignTabs } from "@/components/shared/DesignTabs";
 import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
@@ -43,15 +43,18 @@ export const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md transition-transform duration-300 ease-in-out"
       style={{ transform: visible ? "translateY(0)" : "translateY(-100%)" }}
     >
-      <div className="max-w-300 mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-300 mx-auto px-6 h-16 relative flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Logo />
         </Link>
 
-        <div className="flex items-center gap-3">
-          <DesignSwitcher current="minimal" theme="light" className="hidden sm:inline-flex" />
-          <Button className="rounded-lg px-5 h-9 text-sm">Get Started</Button>
-        </div>
+        <DesignTabs
+          current="minimal"
+          theme="light"
+          className="hidden sm:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        />
+
+        <Button className="rounded-lg px-5 h-9 text-sm">Get Started</Button>
       </div>
     </header>
   );

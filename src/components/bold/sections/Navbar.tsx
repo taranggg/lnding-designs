@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "../ui/button";
 import { Logo } from "@/components/shared/Logo";
-import { DesignSwitcher } from "@/components/shared/DesignSwitcher";
+import { DesignTabs } from "@/components/shared/DesignTabs";
 
 export const Navbar = () => {
   const [visible, setVisible] = useState(true);
@@ -40,17 +40,20 @@ export const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out"
       style={{ transform: visible ? "translateY(0)" : "translateY(-100%)" }}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 h-20 relative flex items-center justify-between">
         <a href="/" className="flex items-center">
           <Logo />
         </a>
 
-        <div className="flex items-center gap-3">
-          <DesignSwitcher current="bold" theme="dark" className="hidden sm:inline-flex" />
-          <Button variant="gradient" size="sm">
-            Get Started
-          </Button>
-        </div>
+        <DesignTabs
+          current="bold"
+          theme="dark"
+          className="hidden sm:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        />
+
+        <Button variant="gradient" size="sm">
+          Get Started
+        </Button>
       </div>
     </header>
   );
