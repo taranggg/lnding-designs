@@ -1,10 +1,10 @@
 /* Import this file once globally (e.g. in your root index.css), after your
-   @tailwind directives. Requires /public/fonts/times-now-semi-light.otf to be
+   @tailwind directives. Requires /public/glass/fonts/times-now-semi-light.otf to be
    copied into your new project's public/fonts folder. */
 
 @font-face {
   font-family: "TimesNow";
-  src: url("/fonts/times-now-semi-light.otf") format("opentype");
+  src: url("/glass/fonts/times-now-semi-light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;

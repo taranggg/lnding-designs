@@ -76,7 +76,7 @@ export const FeaturesSection = () => {
             className="shadow-lg"
             innerClassName="bg-background text-foreground group-hover:bg-primary group-hover:text-primary-foreground"
           >
-            Explore Platform
+            Learn More
           </ShinyButton>
         </div>
 
@@ -105,8 +105,8 @@ export const FeaturesSection = () => {
             }}
           >
             <img
-              src="/images/LinkFulence_featureHero.avif"
-              alt="LinkFluence platform features"
+              src="/minimal/LinkFulence_featureHero.avif"
+              alt="Platform features"
               className="w-full h-auto block"
               style={{ borderRadius: "inherit" }}
             />

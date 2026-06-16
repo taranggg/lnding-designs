@@ -1,5 +1,5 @@
 import React from "react";
-import { StackedCards } from "../components/StackedCards";
+import { StackedCards } from "@/components/shared/StackedCards";
 import {
   ACCENT_COLOR,
   PEEK_HEIGHT,
@@ -14,7 +14,7 @@ export const ServicesSection: React.FC = () => {
         <div className="mb-8">
           <span className="text-sm font-mono text-gray-500">&gt; SERVICES</span>
           <hr className="my-2 border-gray-300" />
-          <h2 className="text-4xl font-bold text-gray-900">What we offer?</h2>
+          <h2 className="text-4xl font-bold text-gray-900">Lorem ipsum dolor?</h2>
         </div>
 
         <StackedCards peekHeight={PEEK_HEIGHT} catchSpeed={6} lerpEase={0.08}>

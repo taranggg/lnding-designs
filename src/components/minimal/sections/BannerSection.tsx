@@ -8,7 +8,7 @@ export const BannerSection = () => {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
           {/* Depth layer: blurred, offset shadow beneath */}
           <img
-            src="/linkfluence-logo.png"
+            src="/minimal/linkfluence-logo.png"
             alt=""
             aria-hidden="true"
             style={{
@@ -22,7 +22,7 @@ export const BannerSection = () => {
           />
           {/* Main layer */}
           <img
-            src="/linkfluence-logo.png"
+            src="/minimal/linkfluence-logo.png"
             alt=""
             aria-hidden="true"
             style={{
@@ -46,7 +46,7 @@ export const BannerSection = () => {
               maxWidth: "720px",
             }}
           >
-            Build partnerships that drive real impact.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit.
           </h2>
 
           <p
@@ -57,8 +57,8 @@ export const BannerSection = () => {
               maxWidth: "500px",
             }}
           >
-            Join the top creators and brands using LinkFluence to connect,
-            collaborate, and scale their reach seamlessly.
+            Sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua ut enim ad minim veniam quis nostrud.
           </p>
 
           <div className="mt-4">
@@ -67,7 +67,7 @@ export const BannerSection = () => {
               blobColor="bg-slate-900"
               className="px-10 h-12 text-sm font-medium"
             >
-              Request Invite
+              Get Started
             </BlobButton>
           </div>
         </div>

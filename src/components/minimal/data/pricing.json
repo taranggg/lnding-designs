@@ -1,76 +1,76 @@
 {
-  "heading": "Built differently.",
-  "subheading": "Priced fairly.",
-  "description": "Whether you're building an audience or scaling a brand, our pricing is designed to be simple, capped, and completely transparent.",
+  "heading": "Lorem ipsum dolor.",
+  "subheading": "Sit amet consectetur.",
+  "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   "stats": [
-    { "value": "12%", "label": "Brand fee. No agency cut. No subscription." },
+    { "value": "12%", "label": "Lorem ipsum dolor sit amet consectetur adipiscing." },
     {
       "value": "100%",
-      "label": "Of agreed amount paid to the creator. Every time."
+      "label": "Ut enim ad minim veniam quis nostrud exercitation."
     },
     {
       "value": "7d",
-      "label": "From approval to automatic payout via Stripe Connect."
+      "label": "Duis aute irure dolor in reprehenderit voluptate."
     },
-    { "value": "4", "label": "Currencies supported. USD, EUR, GBP, AED." }
+    { "value": "4", "label": "Lorem ipsum dolor sit amet consectetur adipiscing." }
   ],
   "plans": [
     {
       "id": "creator",
-      "title": "Creator",
-      "subtitle": "For verified influencers",
+      "title": "Lorem",
+      "subtitle": "For lorem ipsum users",
       "price": "Free",
       "priceNote": null,
-      "cta": "Apply as Creator",
+      "cta": "Get Started",
       "ctaFootnote": null,
       "features": [
-        "Free to join - no subscriptions",
-        "AI-matched campaign offers",
-        "Automated contracts & payouts",
-        "Secure Stripe Connect payments",
-        "Real-time notifications",
-        "Portfolio showcase",
-        "Performance tracking",
-        "Analytics dashboard"
+        "Lorem ipsum dolor sit amet",
+        "Consectetur adipiscing elit",
+        "Sed do eiusmod tempor incididunt",
+        "Ut labore et dolore magna aliqua",
+        "Ut enim ad minim veniam",
+        "Quis nostrud exercitation",
+        "Ullamco laboris nisi ut aliquip",
+        "Ex ea commodo consequat"
       ]
     },
     {
       "id": "brand",
-      "title": "Brand",
-      "subtitle": "For premium brands",
+      "title": "Ipsum",
+      "subtitle": "For lorem ipsum teams",
       "price": "12%",
       "priceNote": "platform fee",
-      "cta": "Apply as Brand",
-      "ctaFootnote": "Calculate your exact costs →",
+      "cta": "Get Started",
+      "ctaFootnote": "Lorem ipsum dolor sit →",
       "features": [
-        "Free to sign up - no subscriptions",
-        "12% platform fee per collaboration",
-        "Fee capped at $1,500 maximum",
-        "Minimum $65 fee for small campaigns",
-        "Unlimited campaign creation",
-        "AI creator matching",
+        "Lorem ipsum dolor sit amet",
+        "Consectetur adipiscing elit sed",
+        "Do eiusmod tempor incididunt",
+        "Ut labore et dolore magna aliqua",
+        "Unlimited lorem ipsum creation",
+        "Dolor sit amet matching",
         "Secure payment protection",
         "Contract automation",
         "Campaign analytics",
         "Content approval workflow",
-        "Brand safety tools"
+        "Lorem ipsum safety tools"
       ]
     },
     {
       "id": "agency",
-      "title": "Agency",
-      "subtitle": "For talent agencies",
+      "title": "Dolor",
+      "subtitle": "For lorem ipsum agencies",
       "price": "Custom",
       "priceNote": null,
-      "cta": "Apply as Agency",
+      "cta": "Get Started",
       "ctaFootnote": null,
       "features": [
-        "Manage multiple creators",
-        "Bulk campaign tools",
+        "Manage multiple lorem ipsums",
+        "Bulk lorem ipsum tools",
         "Advanced analytics & insights",
         "Priority API access",
         "Custom integrations",
-        "Priority creator matching",
+        "Priority lorem ipsum matching",
         "Dedicated account manager",
         "White-label options",
         "Custom reporting dashboards",

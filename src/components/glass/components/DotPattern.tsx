@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef } from "react";
-import { cn } from "../lib/cn";
+import { cn } from "@/lib/utils";
 
 export interface DotPatternProps {
   className?: string;

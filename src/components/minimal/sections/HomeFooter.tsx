@@ -29,7 +29,7 @@ export const HomeFooter = () => {
           <Link href="/">
             <img
               src={footerData.logo}
-              alt="LinkFluence"
+              alt="Logo"
               className="h-20 w-auto object-contain"
             />
           </Link>
@@ -80,7 +80,7 @@ export const HomeFooter = () => {
             © {new Date().getFullYear()} {footerData.copyright.owner}. {footerData.copyright.rights}
           </span>
           <span className="hidden sm:block">
-            Influence. Amplified.
+            Lorem ipsum dolor sit.
           </span>
         </div>
 

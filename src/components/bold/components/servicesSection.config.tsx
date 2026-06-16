@@ -1,7 +1,7 @@
 import React from "react";
-import instagramLogo from "../assets/social-logos/instagram.png";
-import youtubeLogo from "../assets/social-logos/youtube.png";
-import tiktokLogo from "../assets/social-logos/tiktok.png";
+import instagramLogo from "@/components/shared/assets/social-logos/instagram.png";
+import youtubeLogo from "@/components/shared/assets/social-logos/youtube.png";
+import tiktokLogo from "@/components/shared/assets/social-logos/tiktok.png";
 
 export const ACCENT_COLOR = "#3b82f6";
 export const PEEK_HEIGHT = 111;
@@ -16,51 +16,51 @@ export interface ServiceItem {
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
-    title: "Influencer Marketing",
+    title: "Lorem Ipsum",
     description:
-      "We have a team of 50+ specialists to ideate, execute, and deliver the desired outcomes for brands.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
     bullets: [
-      "Strategic creator partnerships",
-      "Creative inputs with seamless execution",
-      "Optimized costs",
-      "Comprehensive campaign reports",
+      "Lorem ipsum dolor sit amet",
+      "Consectetur adipiscing elit sed",
+      "Eiusmod tempor incididunt",
+      "Ut labore et dolore magna",
     ],
     accent: true,
     imageSlot: "influencer",
   },
   {
-    title: "Digital IPs",
+    title: "Dolor Sit Amet",
     description:
-      "We develop original, creator-led shows for brands, to build stronger brand recall than short-form content. These IPs are built for entertainment, storytelling, and community engagement to help brands establish a deeper presence in the digital culture.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.",
     bullets: [
-      "Aligning with brand goals",
+      "Aligning with lorem ipsum goals",
       "Crafting engaging narratives",
-      "Strategic creator selection",
+      "Strategic dolor selection",
       "Producing at scale",
     ],
     accent: false,
     imageSlot: "digital-ips",
   },
   {
-    title: "Talent Management",
+    title: "Consectetur Elit",
     description:
-      "We exclusively represent 120+ powerhouse creators across all categories in the digital ecosystem backing them from rising stars to household names.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     bullets: [
-      "Direct access to top creators",
+      "Direct access to top lorem ipsum",
       "Quicker and smoother executions",
-      "Stronger creator-brand alignment",
-      "Nation-wide influence across all niches & audiences",
+      "Stronger dolor-sit alignment",
+      "Nation-wide influence across all niches",
     ],
     accent: true,
     imageSlot: "talent",
   },
   {
-    title: "Monk-E Studios",
+    title: "Sed Eiusmod Studios",
     description:
-      "A full-service creative production house delivering high-quality video content for brands and creators.",
+      "A full-service lorem ipsum production house delivering high-quality content for dolor sit amet.",
     bullets: [
       "Modular studio space for all your needs",
-      "Industry-grade equipment & skilled production crews",
+      "Industry-grade equipment & skilled crews",
       "World-class editing suite",
       "End-to-end production support",
     ],
@@ -105,7 +105,7 @@ function InfluencerCard() {
         >
           <div className="w-2 h-2 rounded-full bg-green-400" />
           <span className="text-white/50 text-xs font-medium tracking-wider uppercase">
-            500+ Brand Campaigns
+            Lorem Ipsum Dolor
           </span>
         </div>
       </div>
@@ -115,15 +115,15 @@ function InfluencerCard() {
 
 function DigitalIPsCard() {
   const brands = [
-    "AJIO",
-    "Mtn Dew",
-    "Urban Co.",
-    "Licious",
-    "bbNow",
-    "Asian Paints",
-    "OnePlus",
-    "IKEA",
-    "Centrum",
+    "Lorem",
+    "Ipsum",
+    "Dolor",
+    "Sit Amet",
+    "Consectetur",
+    "Adipiscing",
+    "Elit",
+    "Sed Do",
+    "Eiusmod",
   ];
   return (
     <div
@@ -196,7 +196,7 @@ function StudiosCard() {
             color: "rgba(255,255,255,0.9)",
           }}
         >
-          MONK - E
+          LOREM
         </p>
         <p
           className="font-bold tracking-[0.5em] uppercase"
@@ -205,7 +205,7 @@ function StudiosCard() {
             color: "rgba(255,255,255,0.4)",
           }}
         >
-          STUDIOS
+          IPSUM
         </p>
       </div>
     </div>

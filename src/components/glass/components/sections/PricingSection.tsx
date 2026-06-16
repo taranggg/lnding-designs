@@ -5,14 +5,14 @@ import JourneyAnimation from "../JourneyAnimation";
 const PricingSection: React.FC = () => {
   return (
     <JourneyAnimation
-      title="Power your next collaboration."
+      title="Lorem ipsum dolor sit amet."
       description={
         <>
-          Whether you're building an audience or scaling a brand, our pricing is
-          designed to be simple, capped, and completely transparent.
+          Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </>
       }
-      backgroundImageUrl="/blue-mountain-bg.jpeg"
+      backgroundImageUrl="/glass/blue-mountain-bg.jpeg"
       cards={[
         // CARD 1: CREATOR
         {
@@ -22,21 +22,21 @@ const PricingSection: React.FC = () => {
               <div className="mb-2">
                 <h3 className="text-lg font-semibold m-0">Creator</h3>
                 <span className="text-[10px] uppercase tracking-wider opacity-80 block mb-0.5">
-                  For verified influencers
+                  Lorem ipsum dolor sit
                 </span>
                 <div className="text-3xl font-bold leading-none">Free</div>
               </div>
 
               <ul className="list-none p-0 m-0 mb-2 flex-grow">
                 {[
-                  "Free to join - no subscriptions",
-                  "AI-matched campaign offers",
-                  "Automated contracts & payouts",
-                  "Secure Stripe Connect payments",
-                  "Real-time notifications",
-                  "Portfolio showcase",
-                  "Performance tracking",
-                  "Analytics dashboard",
+                  "Lorem ipsum dolor sit amet",
+                  "Consectetur adipiscing elit",
+                  "Sed do eiusmod tempor incididunt",
+                  "Ut labore et dolore magna aliqua",
+                  "Ut enim ad minim veniam",
+                  "Quis nostrud exercitation",
+                  "Ullamco laboris nisi ut aliquip",
+                  "Ex ea commodo consequat",
                 ].map((feature, i) => (
                   <li
                     key={i}
@@ -51,7 +51,7 @@ const PricingSection: React.FC = () => {
                 className="w-full mt-auto h-8 py-1 rounded-xl text-xs font-semibold !bg-[#111] !text-white !border-0 hover:!text-white"
                 blobColor="bg-[#2563eb]"
               >
-                Apply as Creator
+                Get Started
               </BlobButton>
             </div>
           ),
@@ -64,7 +64,7 @@ const PricingSection: React.FC = () => {
               <div className="mb-2">
                 <h3 className="text-lg font-semibold m-0">Brand</h3>
                 <span className="text-[10px] uppercase tracking-wider opacity-80 block mb-0.5">
-                  For premium brands
+                  Consectetur adipiscing elit
                 </span>
                 <div className="text-3xl font-bold leading-none">
                   12%{" "}
@@ -76,17 +76,17 @@ const PricingSection: React.FC = () => {
 
               <ul className="list-none p-0 m-0 mb-2 flex-grow">
                 {[
-                  "Free to sign up - no subscriptions",
-                  "12% platform fee per collaboration",
-                  "Fee capped at $1,500 maximum",
-                  "Minimum $65 fee for small campaigns",
-                  "Unlimited campaign creation",
-                  "AI creator matching",
+                  "Lorem ipsum dolor sit amet",
+                  "Consectetur adipiscing elit sed",
+                  "Do eiusmod tempor incididunt",
+                  "Ut labore et dolore magna aliqua",
+                  "Unlimited lorem ipsum creation",
+                  "Dolor sit amet matching",
                   "Secure payment protection",
                   "Contract automation",
                   "Campaign analytics",
                   "Content approval workflow",
-                  "Brand safety tools",
+                  "Lorem ipsum safety tools",
                 ].map((feature, i) => (
                   <li
                     key={i}
@@ -102,13 +102,13 @@ const PricingSection: React.FC = () => {
                   className="w-full h-8 py-1 rounded-xl text-xs font-semibold !bg-white !text-[#1a56db] !border-0 hover:!text-white"
                   blobColor="bg-slate-800"
                 >
-                  Apply as Brand
+                  Get Started
                 </BlobButton>
                 <a
                   href="#"
                   className="block text-center mt-2 text-[10px] underline underline-offset-2 opacity-80 hover:opacity-100 transition-opacity"
                 >
-                  Calculate your exact costs →
+                  Lorem ipsum dolor sit →
                 </a>
               </div>
             </div>
@@ -122,19 +122,19 @@ const PricingSection: React.FC = () => {
               <div className="mb-2">
                 <h3 className="text-lg font-semibold m-0">Agency</h3>
                 <span className="text-[10px] uppercase tracking-wider opacity-80 block mb-0.5">
-                  For talent agencies
+                  Sed do eiusmod tempor
                 </span>
                 <div className="text-3xl font-bold leading-none">Custom</div>
               </div>
 
               <ul className="list-none p-0 m-0 mb-2 flex-grow">
                 {[
-                  "Manage multiple creators",
-                  "Bulk campaign tools",
+                  "Manage multiple lorem ipsums",
+                  "Bulk lorem ipsum tools",
                   "Advanced analytics & insights",
                   "Priority API access",
                   "Custom integrations",
-                  "Priority creator matching",
+                  "Priority lorem ipsum matching",
                   "Dedicated account manager",
                   "White-label options",
                   "Custom reporting dashboards",
@@ -154,7 +154,7 @@ const PricingSection: React.FC = () => {
                 className="w-full mt-auto h-8 py-1 rounded-xl text-xs font-semibold !bg-transparent border !border-white/30 !text-white hover:!text-white hover:!border-transparent"
                 blobColor="bg-[#2563eb]"
               >
-                Apply as Agency
+                Get Started
               </BlobButton>
             </div>
           ),

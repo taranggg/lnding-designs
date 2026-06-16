@@ -6,11 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 // ── Manifesto copy ────────────────────────────────────────────────────────────
 const LINES = [
-  "An elite, invite-only ecosystem for visionary creators and",
-  "trusted brands. We power frictionless, high-impact",
-  "campaigns through intelligent matching,",
-  "auto-generated secure contracts, and",
-  "rigorous built-in compliance.",
+  "Lorem ipsum dolor sit amet consectetur",
+  "adipiscing elit sed do eiusmod tempor",
+  "incididunt ut labore et dolore magna",
+  "aliqua ut enim ad minim veniam,",
+  "quis nostrud exercitation ullamco.",
 ];
 const TOTAL_WORDS = LINES.reduce((s, l) => s + l.split(" ").length, 0);
 
@@ -18,18 +18,18 @@ const TOTAL_WORDS = LINES.reduce((s, l) => s + l.split(" ").length, 0);
 const PILLARS = [
   {
     num: "01",
-    label: "Absolute Trust",
-    body: "Strictly verified provenance and authentic data.",
+    label: "Lorem Ipsum",
+    body: "Dolor sit amet consectetur adipiscing elit sed do eiusmod.",
   },
   {
     num: "02",
-    label: "Accelerated Speed",
-    body: "Instantaneous algorithmic matching and automated agreements.",
+    label: "Dolor Sit Amet",
+    body: "Tempor incididunt ut labore et dolore magna aliqua ut enim.",
   },
   {
     num: "03",
-    label: "Uncompromising Compliance",
-    body: "GDPR-sovereign infrastructure, ironclad rights protection, and transparent disclosures.",
+    label: "Consectetur Elit",
+    body: "Ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
   },
 ];
 
@@ -268,11 +268,10 @@ export const AboutSection = () => {
         >
           <p style={EYEBROW}>The Vision</p>
           <p style={BODY}>
-            Established in 2025, we are an exclusive, invite-only platform
-            engineered for a new era of brand collaboration—one where
-            structure, transparency, and trust eclipse sheer volume. We curate
-            the connections between elite creators and premium brands, stripping
-            away the friction of traditional partnerships.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
 
@@ -284,10 +283,9 @@ export const AboutSection = () => {
         >
           <p style={EYEBROW}>The Mission</p>
           <p style={BODY}>
-            By centralizing intelligent matching, secure contracting, and
-            seamless payments into a single, refined ecosystem, we empower our
-            members to execute high-caliber campaigns efficiently and
-            confidently.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia.
           </p>
         </div>
 

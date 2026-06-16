@@ -125,7 +125,7 @@
   pointer-events: none;
   z-index: 0;
 
-  background-image: url("/grain.avif");
+  background-image: url("/glass/grain.avif");
   background-size: 150px;
   opacity: 0.2;
   mix-blend-mode: overlay;

@@ -37,7 +37,7 @@ export const Hero = () => {
                   style={{ background: "rgba(255, 195, 0, 0.9)" }}
                 />
                 <span className="text-xs font-medium text-white/60 tracking-widest uppercase">
-                  Creator Economy
+                  Lorem Ipsum
                 </span>
               </div>
 
@@ -50,9 +50,9 @@ export const Hero = () => {
                   letterSpacing: "-0.025em",
                 }}
               >
-                India's Largest
+                Lorem Ipsum Dolor
                 <br />
-                <span style={{ color: "#FFFFFF" }}>Creator Business</span>
+                <span style={{ color: "#FFFFFF" }}>Sit Amet Consectetur</span>
               </h1>
 
               {/* Sub-headline */}
@@ -64,8 +64,8 @@ export const Hero = () => {
                   maxWidth: "480px",
                 }}
               >
-                85B+ views, iconic campaigns, impossible collabs, and
-                culture-defining digital shows with top global brands.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore.
               </p>
 
               {/* CTA */}
@@ -76,16 +76,16 @@ export const Hero = () => {
                   className="cta-double-underline text-white font-bold"
                   style={{ fontSize: "1.05rem" }}
                 >
-                  The Proof is in the Work 👀
+                  Lorem Ipsum Dolor Sit
                 </a>
               </div>
 
               {/* Stat pills */}
               <div className="flex flex-wrap gap-6 pt-4">
                 {[
-                  { value: "85B+", label: "Total Views" },
-                  { value: "500+", label: "Brand Campaigns" },
-                  { value: "#1", label: "Creator Network" },
+                  { value: "85B+", label: "Lorem Ipsum" },
+                  { value: "500+", label: "Dolor Sit Amet" },
+                  { value: "#1", label: "Consectetur" },
                 ].map((stat) => (
                   <div key={stat.label} className="flex flex-col gap-0.5">
                     <span
@@ -143,7 +143,7 @@ export const Hero = () => {
                   className="text-sm font-medium text-center"
                   style={{ color: "#A0A0A0" }}
                 >
-                  When brands let us cook
+                  Lorem ipsum dolor sit amet
                 </p>
               </div>
             </div>

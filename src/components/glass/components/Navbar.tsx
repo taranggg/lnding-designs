@@ -1,29 +1,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 import { RequestInviteModal } from "./invite/RequestInviteModal";
 import { BlobButton } from "./BlobButton";
 import { DesignSwitcher } from "@/components/shared/DesignSwitcher";
 
-/**
- * Standalone homepage navbar — no auth/session wiring. Wire up `onSignInClick`
- * if you add your own auth flow.
- */
 interface NavbarProps {
   onSignInClick?: () => void;
 }
 
 export const Navbar = ({ onSignInClick }: NavbarProps) => {
   const [inviteOpen, setInviteOpen] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [secondFoldVisible, setSecondFoldVisible] = useState(false);
 
   useEffect(() => {
@@ -36,41 +23,6 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const closeMobileMenu = () => setMobileMenuOpen(false);
-
-  const MobileNavLinks = () => (
-    <div className="flex flex-col space-y-4 pt-4">
-      <Link
-        href="/creator"
-        className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-        onClick={closeMobileMenu}
-      >
-        Creator
-      </Link>
-      <Link
-        href="/brand"
-        className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-        onClick={closeMobileMenu}
-      >
-        Brand
-      </Link>
-      <Link
-        href="/agency"
-        className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-        onClick={closeMobileMenu}
-      >
-        Agency
-      </Link>
-      <Link
-        href="/about"
-        className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-        onClick={closeMobileMenu}
-      >
-        About
-      </Link>
-    </div>
-  );
 
   return (
     <>
@@ -91,75 +43,25 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center hover:opacity-80 transition-opacity flex-shrink-0"
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity flex-shrink-0"
           >
             <img
-              src="/logoipsum-350.svg"
-              alt="Logo"
+              src="/shared/logoipsum-350.svg"
+              alt="LinkFluence"
               className="object-contain"
               style={{
                 height: secondFoldVisible ? "20px" : "24px",
                 transition: "height 0.5s ease",
               }}
             />
+            <span className="text-white text-sm font-semibold tracking-tight whitespace-nowrap">
+              LinkFluence
+            </span>
           </Link>
-
-          {/* Center links — hidden on mobile */}
-          <div
-            className="hidden md:flex items-center gap-7 transition-all duration-500"
-            style={{ opacity: secondFoldVisible ? 0.9 : 1 }}
-          >
-            <Link
-              href="/creator"
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
-            >
-              Creator
-            </Link>
-            <Link
-              href="/brand"
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
-            >
-              Brand
-            </Link>
-            <Link
-              href="/agency"
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
-            >
-              Agency
-            </Link>
-            <Link
-              href="/about"
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
-            >
-              About
-            </Link>
-          </div>
 
           {/* Right side */}
           <div className="flex items-center gap-2 flex-shrink-0">
-            <DesignSwitcher current="home3" theme="dark" className="hidden lg:inline-flex" />
-            {/* Mobile menu */}
-            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-              <SheetTrigger asChild className="md:hidden">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-white hover:bg-white/10"
-                >
-                  <Menu className="h-5 w-5" />
-                  <span className="sr-only">Open menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent
-                side="right"
-                className="w-[280px] bg-background border-border"
-              >
-                <SheetHeader>
-                  <SheetTitle className="text-foreground">Menu</SheetTitle>
-                </SheetHeader>
-                <MobileNavLinks />
-              </SheetContent>
-            </Sheet>
+            <DesignSwitcher current="glass" theme="dark" className="hidden lg:inline-flex" />
 
             <Button
               variant="ghost"

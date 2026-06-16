@@ -1,4 +1,4 @@
-# Home3
+# glass
 
 Standalone copy of the discarded homepage design (hero, about/manifesto,
 features, pricing cards, navbar, footer). Auth/backend wiring has been
@@ -18,13 +18,13 @@ npx shadcn@latest add button dialog card sheet
 
 ## 3. Copy assets
 
-- `Home3/public/*` → your project's `public/` (fonts, grain.avif, jpeg backgrounds)
-- `Home3/assets/linkfluence-logo.png` → swap for your own logo, or keep and
+- `glass/public/*` → your project's `public/` (fonts, grain.avif, jpeg backgrounds)
+- `glass/assets/linkfluence-logo.png` → swap for your own logo, or keep and
   update the import in `components/Navbar.tsx`
 
 ## 4. Merge global CSS
 
-Append the contents of `Home3/home.css` (font-face + shimmer keyframes) into
+Append the contents of `glass/home.css` (font-face + shimmer keyframes) into
 your project's global stylesheet, after the `@tailwind` directives.
 
 This design also relies on the standard shadcn CSS variables (`--primary`,
@@ -47,10 +47,10 @@ theme: {
 ## 5. Use it
 
 ```tsx
-import Home from "./Home3";
+import Home from "./glass";
 ```
 
-`Home3/index.tsx` composes everything: `Navbar` → `Hero` → `AboutSection` →
+`glass/index.tsx` composes everything: `Navbar` → `Hero` → `AboutSection` →
 `WhyChooseSection` → `PricingSection` → `Footer`, wrapped in the shared
 `useSmoothScroll` (Lenis) hook.
 

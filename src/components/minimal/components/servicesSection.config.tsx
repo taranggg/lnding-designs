@@ -1,6 +1,6 @@
-import instagramLogo from "../assets/social-logos/instagram.png";
-import youtubeLogo from "../assets/social-logos/youtube.png";
-import tiktokLogo from "../assets/social-logos/tiktok.png";
+import instagramLogo from "@/components/shared/assets/social-logos/instagram.png";
+import youtubeLogo from "@/components/shared/assets/social-logos/youtube.png";
+import tiktokLogo from "@/components/shared/assets/social-logos/tiktok.png";
 import servicesData from "../data/services.json";
 
 export const ACCENT_COLOR = servicesData.accentColor;
@@ -46,7 +46,7 @@ function InfluencerCard() {
         >
           <div className="w-2 h-2 rounded-full bg-green-400" />
           <span className="text-white/50 text-xs font-medium tracking-wider uppercase">
-            500+ Brand Campaigns
+            Lorem Ipsum Dolor
           </span>
         </div>
       </div>
@@ -108,13 +108,13 @@ function StudiosCard() {
           className="font-black tracking-[0.3em] uppercase"
           style={{ fontSize: "clamp(1.2rem, 2vw, 1.8rem)", color: "rgba(255,255,255,0.9)" }}
         >
-          MONK - E
+          LOREM
         </p>
         <p
           className="font-bold tracking-[0.5em] uppercase"
           style={{ fontSize: "clamp(0.7rem, 1vw, 0.9rem)", color: "rgba(255,255,255,0.4)" }}
         >
-          STUDIOS
+          IPSUM
         </p>
       </div>
     </div>

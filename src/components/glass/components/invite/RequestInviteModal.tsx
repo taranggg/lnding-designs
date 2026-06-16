@@ -32,8 +32,8 @@ export const RequestInviteModal = ({
             Request Your Invite
           </DialogTitle>
           <DialogDescription>
-            An invite-only platform connecting verified creators and trusted
-            brands. Choose your role to continue.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit.
+            Choose your role to continue.
           </DialogDescription>
         </DialogHeader>
         <RoleSelectionInvite onRoleSelect={handleRoleSelect} />

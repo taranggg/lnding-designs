@@ -17,8 +17,8 @@ export const Hero = () => {
             letterSpacing: "-0.02em",
           }}
         >
-          Premium Creators Trusted Brands
-          <br /> One Network.
+          Lorem Ipsum Dolor Sit Amet
+          <br /> Consectetur Elit.
         </h1>
 
         <p
@@ -29,19 +29,19 @@ export const Hero = () => {
             maxWidth: "560px",
           }}
         >
-          The invite-only platform designed to remove friction and bring
-          transparency to high-quality partnerships.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua ut enim ad minim veniam.
         </p>
 
         <div className="flex items-center gap-3 flex-wrap justify-center mt-2">
           <Button className="rounded-xl px-8 h-11 text-sm">
-            Apply as Creator
+            Get Started
           </Button>
           <Button
             variant="default"
             className="rounded-xl px-8 h-11 text-sm bg-slate-100/20 border border-slate-200 text-bg-foreground hover:bg-background "
           >
-            Apply as Brand
+            Learn More
           </Button>
         </div>
       </div>
@@ -55,14 +55,14 @@ export const Hero = () => {
           style={{ zIndex: -1 }}
         >
           <img
-            src="/churro/LinkFluence_churro1.avif"
+            src="/minimal/churro/LinkFluence_churro1.avif"
             alt=""
             className="w-full h-full object-cover opacity-100"
           />
         </div>
 
         <BrowserWindow
-          src="/Blue_background_with_hanged_hand.jpeg"
+          src="/shared/Blue_background_with_hanged_hand.jpeg"
           mediaType="image"
           height={750}
           framePadding="p-3 pt-10"

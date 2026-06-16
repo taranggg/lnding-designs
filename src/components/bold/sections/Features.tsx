@@ -10,39 +10,39 @@ import {
 const features = [
   {
     icon: Shield,
-    title: "Verified Network",
+    title: "Lorem Ipsum",
     description:
-      "Every creator and brand is manually verified by our team to ensure quality and authenticity.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
   },
   {
     icon: Zap,
-    title: "AI-Powered Matching",
+    title: "Dolor Sit Amet",
     description:
-      "Smart algorithms match creators with brands based on audience, niche, and campaign goals.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
   },
   {
     icon: Lock,
-    title: "Secure Contracts",
+    title: "Consectetur Elit",
     description:
-      "Auto-generated contracts protect both parties with clear terms, deliverables, and payment schedules.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
   },
   {
     icon: Users,
-    title: "Premium Brands",
+    title: "Sed Do Eiusmod",
     description:
-      "Work with top-tier brands that value quality content and fair compensation.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",
   },
   {
     icon: TrendingUp,
-    title: "Campaign Analytics",
+    title: "Tempor Incididunt",
     description:
-      "Track performance metrics and insights to optimize your collaborations and grow your reach.",
+      "Mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
   },
   {
     icon: FileCheck,
-    title: "Compliance First",
+    title: "Labore Et Dolore",
     description:
-      "Built-in compliance tools ensure all campaigns meet regulatory requirements and platform guidelines.",
+      "Accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.",
   },
 ];
 
@@ -55,15 +55,15 @@ export const Features = () => {
           <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 font-medium">
             Why Choose{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              LinkFluence
+              Us
             </span>
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Built for Premium Collaborations
+            Lorem Ipsum Dolor Sit Amet
           </h2>
           <p className="text-[17px] leading-7 text-neutral-700">
-            Everything you need to create successful, compliant partnerships
-            between verified creators and trusted brands.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
 

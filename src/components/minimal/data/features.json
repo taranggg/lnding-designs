@@ -1,30 +1,30 @@
 {
-  "heading": "The Complete Partnership Toolkit",
-  "subheading": "Four essential elements. One unified platform. Everything you need to orchestrate seamless partnerships.",
+  "heading": "Lorem ipsum dolor sit amet",
+  "subheading": "Consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "items": [
     {
       "icon": "UsersRound",
       "color": "#111827",
-      "title": "Curated Network",
-      "description": "Every creator and brand is strictly vetted by invitation. We ensure that every partnership is authentic, high-quality, and built on trust."
+      "title": "Lorem Ipsum",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
     },
     {
       "icon": "Brain",
       "color": "#4A6FFF",
-      "title": "Intelligent Matching",
-      "description": "Our smart algorithms pair the right talent with the perfect brand. We ensure a seamless fit across audience, style, and campaign goals."
+      "title": "Dolor Sit Amet",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
     },
     {
       "icon": "ShieldCheck",
       "color": "#E53935",
-      "title": "Secure & Compliant",
-      "description": "Collaborate with absolute confidence. Auto-generated contracts and built-in compliance tools protect both parties from start to finish."
+      "title": "Consectetur Elit",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
     },
     {
       "icon": "BarChart2",
       "color": "#E8A020",
-      "title": "Clear Analytics",
-      "description": "Track your success effortlessly. Access straightforward performance metrics and insights to optimize your campaigns and measure your real impact."
+      "title": "Sed Eiusmod Tempor",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
     }
   ]
 }

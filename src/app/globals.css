@@ -129,7 +129,7 @@
   }
 }
 
-/* home2 design: gradient/shadow utilities (src/components/home2/styles.css, tailwind.extend.ts) */
+/* bold design: gradient/shadow utilities (src/components/bold/styles.css, tailwind.extend.ts) */
 :root {
   --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
 }
@@ -184,10 +184,10 @@
   }
 }
 
-/* Home3 design: font-face + shimmer keyframes (src/components/Home3/home.css) */
+/* glass design: font-face + shimmer keyframes (src/components/glass/home.css) */
 @font-face {
   font-family: "TimesNow";
-  src: url("/fonts/times-now-semi-light.otf") format("opentype");
+  src: url("/glass/fonts/times-now-semi-light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;

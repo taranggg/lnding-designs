@@ -1,4 +1,4 @@
-import Home from "@/components/Home3";
+import Home from "@/components/glass";
 
 export default function Page() {
   return <Home />;

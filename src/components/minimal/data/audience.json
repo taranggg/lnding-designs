@@ -1,22 +1,22 @@
 {
-  "heading": "Two sides, one platform",
-  "subheading": "Built for both. Fair to both.",
+  "heading": "Lorem ipsum dolor sit amet",
+  "subheading": "Consectetur adipiscing elit, sed do eiusmod.",
   "cards": [
     {
-      "churroSrc": "/churro/LinkFluence_churro3.avif",
-      "label": "For Creators",
+      "churroSrc": "/minimal/churro/LinkFluence_churro3.avif",
+      "label": "Lorem Ipsum",
       "labelColor": "#b45309",
-      "title": "Keep 100% of what you earn.",
-      "description": "No agency takes a cut. Sign real contracts. Escrow funded before you start. Payout in seven days, automatic.",
-      "cta": "Apply as Creator"
+      "title": "Lorem ipsum dolor sit amet consectetur.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "cta": "Get Started"
     },
     {
-      "churroSrc": "/churro/LinkFluence_churro5.avif",
-      "label": "For Brands",
+      "churroSrc": "/minimal/churro/LinkFluence_churro5.avif",
+      "label": "Dolor Sit Amet",
       "labelColor": "#1e3a5f",
-      "title": "Access vetted creators only.",
-      "description": "Browse verified profiles. Run structured campaigns. Fund escrow once. Get the content you commissioned.",
-      "cta": "Apply as Brand"
+      "title": "Ut enim ad minim veniam quis.",
+      "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "cta": "Get Started"
     }
   ]
 }

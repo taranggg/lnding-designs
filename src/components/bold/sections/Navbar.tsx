@@ -1,18 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
 import { Logo } from "@/components/shared/Logo";
 import { DesignSwitcher } from "@/components/shared/DesignSwitcher";
 
-const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Features", href: "#features" },
-  { label: "Pricing", href: "#pricing" },
-];
-
 export const Navbar = () => {
   const [visible, setVisible] = useState(true);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const lastScrollY = useRef(0);
   const ticking = useRef(false);
@@ -30,7 +22,6 @@ export const Navbar = () => {
           setVisible(true);
         } else if (delta > 4) {
           setVisible(false);
-          setMobileMenuOpen(false);
         } else if (delta < -4) {
           setVisible(true);
         }
@@ -54,57 +45,12 @@ export const Navbar = () => {
           <Logo />
         </a>
 
-        <nav className="hidden md:flex items-center gap-7">
-          {navLinks.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors"
-            >
-              {label}
-            </a>
-          ))}
-        </nav>
-
         <div className="flex items-center gap-3">
-          <DesignSwitcher current="home2" theme="dark" className="hidden sm:inline-flex" />
-          <Button variant="gradient" size="sm" className="hidden sm:inline-flex">
-            Request Invite
+          <DesignSwitcher current="bold" theme="dark" className="hidden sm:inline-flex" />
+          <Button variant="gradient" size="sm">
+            Get Started
           </Button>
-          <button
-            className="md:hidden p-2 rounded-lg text-white/80 hover:text-white hover:bg-white/10 transition-colors"
-            onClick={() => setMobileMenuOpen((v) => !v)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
         </div>
-      </div>
-
-      <div
-        className="md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-[#0B0B0B]/95 backdrop-blur-md"
-        style={{ maxHeight: mobileMenuOpen ? "320px" : "0px" }}
-      >
-        <nav className="flex flex-col gap-1 px-6 py-3">
-          {navLinks.map(({ label, href }) => (
-            <a
-              key={href}
-              href={href}
-              className="px-3 py-2.5 rounded-lg text-sm font-medium text-white/80 hover:text-white hover:bg-white/10 transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {label}
-            </a>
-          ))}
-          <Button
-            variant="gradient"
-            size="sm"
-            className="mt-2"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Request Invite
-          </Button>
-        </nav>
       </div>
     </header>
   );

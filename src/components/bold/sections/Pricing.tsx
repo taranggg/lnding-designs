@@ -15,60 +15,60 @@ const plans = [
     name: "Creator",
     price: "Free",
     period: "",
-    description: "For verified influencers",
+    description: "Lorem ipsum dolor sit amet",
     features: [
-      "Free to join - no subscriptions",
-      "AI-matched campaign offers",
-      "Automated contracts & payouts",
-      "Secure Stripe Connect payments",
-      "Real-time notifications",
-      "Portfolio showcase",
-      "Performance tracking",
-      "Analytics dashboard",
+      "Lorem ipsum dolor sit amet",
+      "Consectetur adipiscing elit",
+      "Sed do eiusmod tempor incididunt",
+      "Ut labore et dolore magna aliqua",
+      "Ut enim ad minim veniam",
+      "Quis nostrud exercitation",
+      "Ullamco laboris nisi ut aliquip",
+      "Ex ea commodo consequat",
     ],
-    cta: "Apply as Creator",
+    cta: "Get Started",
     popular: false,
   },
   {
     name: "Brand",
     price: "12%",
     period: "platform fee",
-    description: "For premium brands",
+    description: "Consectetur adipiscing elit",
     features: [
-      "Free to sign up - no subscriptions",
-      "12% platform fee per collaboration",
-      "Fee capped at $1,500 maximum",
-      "Minimum $65 fee for small campaigns",
-      "Unlimited campaign creation",
-      "AI creator matching",
+      "Lorem ipsum dolor sit amet",
+      "Consectetur adipiscing elit sed",
+      "Do eiusmod tempor incididunt",
+      "Ut labore et dolore magna aliqua",
+      "Unlimited lorem ipsum creation",
+      "Dolor sit amet matching",
       "Secure payment protection",
       "Contract automation",
       "Campaign analytics",
       "Content approval workflow",
-      "Brand safety tools",
+      "Lorem ipsum safety tools",
     ],
-    cta: "Apply as Brand",
+    cta: "Get Started",
     popular: true,
   },
   {
     name: "Agency",
     price: "Custom",
     period: "",
-    description: "For talent agencies",
+    description: "Sed do eiusmod tempor",
     features: [
-      "Manage multiple creators",
-      "Bulk campaign tools",
+      "Manage multiple lorem ipsums",
+      "Bulk lorem ipsum tools",
       "Advanced analytics & insights",
       "Priority API access",
       "Custom integrations",
-      "Priority creator matching",
+      "Priority lorem ipsum matching",
       "Dedicated account manager",
       "White-label options",
       "Custom reporting dashboards",
       "Multi-workspace support",
       "Team collaboration tools",
     ],
-    cta: "Apply as Agency",
+    cta: "Get Started",
     popular: false,
   },
 ];
@@ -111,18 +111,18 @@ export const Pricing = ({ highlightedRole, onApply }: PricingProps) => {
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto space-y-4">
           <p className="text-xs uppercase tracking-[0.18em] text-neutral-500 font-medium">
-            Pricing Plans
+            Lorem Ipsum
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Choose Your Path
+            Lorem Ipsum Dolor Sit
           </h2>
           <p className="text-[17px] leading-7 text-neutral-700">
-            Simple, transparent pricing. Free to join, 12% platform fee per
-            successful collaboration.
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt.
           </p>
           <div className="mt-4 inline-block px-6 py-2 bg-primary/10 rounded-full">
             <p className="text-sm font-medium text-primary">
-              Platform fee: $65 minimum, $1,500 maximum cap
+              Lorem ipsum dolor sit amet consectetur
             </p>
           </div>
         </div>

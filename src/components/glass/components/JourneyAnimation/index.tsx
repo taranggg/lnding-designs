@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import styles from "./styles.module.css";
 import { DotPattern } from "../DotPattern";
-import { useSmoothScroll } from "../../hooks/useSmoothScroll";
+import { useSmoothScroll } from "@/components/shared/hooks/useSmoothScroll";
 
 gsap.registerPlugin(ScrollTrigger);
 

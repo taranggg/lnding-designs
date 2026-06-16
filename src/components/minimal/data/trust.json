@@ -1,30 +1,30 @@
 {
-  "heading": "Trust infrastructure",
-  "subheading": "Three pillars. No shortcuts.",
+  "heading": "Lorem ipsum dolor",
+  "subheading": "Sit amet. No shortcuts.",
   "pillars": [
     {
       "number": "01",
-      "label": "Verified",
-      "tagline": "Real brands. Real creators.",
-      "description": "Every brand verified with company registration. Every creator vetted with AI screening and human review.",
+      "label": "Lorem",
+      "tagline": "Dolor sit amet consectetur.",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
       "icon": "BadgeCheck",
       "accent": "#53A6FF",
       "illustrationBg": "#EEF5FF"
     },
     {
       "number": "02",
-      "label": "Protected",
-      "tagline": "Money locked before work starts.",
-      "description": "Stripe escrow funded at contract signing. Auto-release after seven days, or manual earlier.",
+      "label": "Ipsum",
+      "tagline": "Ut enim ad minim veniam.",
+      "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.",
       "icon": "Lock",
       "accent": "#7B5CF6",
       "illustrationBg": "#F3F0FF"
     },
     {
       "number": "03",
-      "label": "Resolved",
+      "label": "Dolor",
       "tagline": "A way out if things go wrong.",
-      "description": "Admin-mediated dispute process. Customisable payout splits, audit logs, fair outcomes.",
+      "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
       "icon": "Scale",
       "accent": "#3B82F6",
       "illustrationBg": "#EFF6FF"

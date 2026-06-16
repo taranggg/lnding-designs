@@ -6,7 +6,7 @@ import { AboutSection } from "./components/sections/AboutSection";
 import { WhyChooseSection } from "./components/sections/WhyChooseSection";
 import PricingSection from "./components/sections/PricingSection";
 import { Footer } from "./components/Footer";
-import { useSmoothScroll } from "./hooks/useSmoothScroll";
+import { useSmoothScroll } from "@/components/shared/hooks/useSmoothScroll";
 
 const Home = () => {
   useSmoothScroll();

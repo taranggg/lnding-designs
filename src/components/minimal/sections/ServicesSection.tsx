@@ -1,4 +1,4 @@
-import { StackedCards } from "../components/StackedCards";
+import { StackedCards } from "@/components/shared/StackedCards";
 import {
   ACCENT_COLOR,
   PEEK_HEIGHT,

@@ -90,7 +90,7 @@ export const Hero = () => {
         className="relative flex-1 flex flex-col overflow-hidden"
         style={{
           borderRadius: "20px",
-          backgroundImage: "url(/Blue_background_with_hanged_hand.jpeg)",
+          backgroundImage: "url(/shared/Blue_background_with_hanged_hand.jpeg)",
           backgroundSize: "cover",
           backgroundPosition: "center top",
           transformOrigin: "center center",
@@ -110,9 +110,9 @@ export const Hero = () => {
                 "0 0 20px rgba(255,255,255,0.9), 0 0 60px rgba(255,255,255,0.5), 0 0 120px rgba(200,220,255,0.35)",
             }}
           >
-            There is an intersection
+            Lorem ipsum dolor sit amet
             <br />
-            between authentic craft and enduring influence.
+            consectetur adipiscing elit sed do eiusmod.
           </h1>
           <p
             className="mt-6 text-slate-350"
@@ -123,7 +123,7 @@ export const Hero = () => {
               letterSpacing: "0.04em",
             }}
           >
-            We are the bridge.
+            Tempor incididunt ut labore.
           </p>
         </div>
 

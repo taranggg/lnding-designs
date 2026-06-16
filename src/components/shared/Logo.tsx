@@ -4,20 +4,22 @@ interface LogoProps {
   /** Dark variant wraps the mark in a white chip so it stays legible on dark/glass backgrounds. */
   variant?: "light" | "dark";
   src?: string;
+  alt?: string;
   className?: string;
   imgClassName?: string;
 }
 
 export const Logo = ({
   variant = "light",
-  src = "/logoipsum-350.svg",
+  src = "/shared/logoipsum-350.svg",
+  alt = "Logo",
   className,
   imgClassName,
 }: LogoProps) => {
   const img = (
     <img
       src={src}
-      alt="LinkFluence"
+      alt={alt}
       className={cn("h-7 w-auto object-contain", imgClassName)}
     />
   );

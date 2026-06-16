@@ -4,9 +4,9 @@ const columns = [
   {
     heading: "Product",
     links: [
-      { label: "Creator", href: "/creator" },
-      { label: "Brand", href: "/brand" },
-      { label: "Agency", href: "/agency" },
+      { label: "Lorem", href: "/lorem" },
+      { label: "Ipsum", href: "/ipsum" },
+      { label: "Dolor", href: "/dolor" },
     ],
   },
   {
@@ -24,7 +24,7 @@ export const Footer = () => {
     <footer className="bg-[#0B0B0B] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-14">
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 mb-10">
-          <Logo src="/logoipsum-351.svg" />
+          <Logo src="/shared/logoipsum-351.svg" />
 
           <div className="flex flex-wrap gap-12">
             {columns.map((col) => (
@@ -50,8 +50,8 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-white/40">
-          <span>© {new Date().getFullYear()} LinkFluence. All Rights Reserved.</span>
-          <span>Influence. Amplified.</span>
+          <span>© {new Date().getFullYear()} Lorem Ipsum Co. All Rights Reserved.</span>
+          <span>Lorem ipsum dolor sit.</span>
         </div>
       </div>
     </footer>

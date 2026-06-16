@@ -8,7 +8,7 @@ import {
   Pricing,
   CTA,
   Footer,
-} from "@/components/home2";
+} from "@/components/bold";
 
 export default function Page() {
   return (

@@ -3,9 +3,9 @@ import { Shield, Zap, Lock, Users, TrendingUp, ClipboardCheck } from "lucide-rea
 const features = [
   {
     icon: Shield,
-    title: "Verified Network",
+    title: "Lorem Ipsum",
     description:
-      "Every creator and brand is manually verified by our team to ensure quality and authenticity.",
+      "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     bg: "#0d0d0f",
     borderColor: "rgba(255,255,255,0.08)",
     glowColor: "rgba(59,130,246,0.12)",
@@ -15,9 +15,9 @@ const features = [
   },
   {
     icon: Zap,
-    title: "AI-Powered Matching",
+    title: "Dolor Sit Amet",
     description:
-      "Smart algorithms match creators with brands based on audience, niche, and campaign goals.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
     bg: "#080e1a",
     borderColor: "rgba(59,130,246,0.2)",
     glowColor: "rgba(59,130,246,0.18)",
@@ -27,9 +27,9 @@ const features = [
   },
   {
     icon: Lock,
-    title: "Secure Contracts",
+    title: "Consectetur Elit",
     description:
-      "Auto-generated contracts protect both parties with clear terms, deliverables, and payment schedules.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
     bg: "#0d0d0f",
     borderColor: "rgba(255,255,255,0.08)",
     glowColor: "rgba(59,130,246,0.12)",
@@ -39,9 +39,9 @@ const features = [
   },
   {
     icon: Users,
-    title: "Premium Brands",
+    title: "Sed Do Eiusmod",
     description:
-      "Work with top-tier brands that value quality content and fair compensation.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",
     bg: "#080e1a",
     borderColor: "rgba(59,130,246,0.2)",
     glowColor: "rgba(59,130,246,0.18)",
@@ -51,9 +51,9 @@ const features = [
   },
   {
     icon: TrendingUp,
-    title: "Campaign Analytics",
+    title: "Tempor Incididunt",
     description:
-      "Track performance metrics and insights to optimize your collaborations and grow your reach.",
+      "Mollit anim id est laborum, sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
     bg: "#0d0d0f",
     borderColor: "rgba(255,255,255,0.08)",
     glowColor: "rgba(59,130,246,0.12)",
@@ -63,9 +63,9 @@ const features = [
   },
   {
     icon: ClipboardCheck,
-    title: "Compliance First",
+    title: "Labore Et Dolore",
     description:
-      "Built-in compliance tools ensure all campaigns meet regulatory requirements and platform guidelines.",
+      "Accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore.",
     bg: "#080e1a",
     borderColor: "rgba(59,130,246,0.2)",
     glowColor: "rgba(59,130,246,0.18)",
@@ -91,13 +91,13 @@ export const WhyChooseSection = () => {
             className="text-white"
             style={{ fontSize: "2.8rem", fontWeight: 400, marginBottom: "0.8rem" }}
           >
-            Everything You Need to Collaborate
+            Lorem Ipsum Dolor Sit Amet
           </h2>
           <p
             className="max-w-2xl mx-auto"
             style={{ fontSize: "1.05rem", lineHeight: 1.5, color: "#a1a1aa" }}
           >
-            From verified creators to secure payments — built for the modern creator economy.
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
           </p>
         </div>
 
@@ -127,7 +127,7 @@ export const WhyChooseSection = () => {
                 <div
                   className="absolute inset-0 pointer-events-none rounded-2xl"
                   style={{
-                    backgroundImage: "url('/grain.avif')",
+                    backgroundImage: "url('/glass/grain.avif')",
                     backgroundSize: "150px",
                     opacity: 0.2,
                     mixBlendMode: "overlay",

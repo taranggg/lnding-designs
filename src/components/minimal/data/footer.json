@@ -1,12 +1,12 @@
 {
-  "logo": "/logoipsum-351.svg",
+  "logo": "/shared/logoipsum-351.svg",
   "columns": [
     {
       "heading": "Product",
       "links": [
-        { "label": "Creator", "href": "/creator" },
-        { "label": "Brand", "href": "/brand" },
-        { "label": "Agency", "href": "/agency" }
+        { "label": "Lorem", "href": "/lorem" },
+        { "label": "Ipsum", "href": "/ipsum" },
+        { "label": "Dolor", "href": "/dolor" }
       ]
     },
     {
@@ -33,7 +33,7 @@
     { "name": "instagram", "href": "#" }
   ],
   "copyright": {
-    "owner": "LinkFluence",
+    "owner": "Lorem Ipsum Co.",
     "rights": "All Rights Reserved."
   }
 }

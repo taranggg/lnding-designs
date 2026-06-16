@@ -8,7 +8,7 @@ import { AudienceSection } from "./sections/AudienceSection";
 import { PricingSection } from "./sections/PricingSection";
 import { BannerSection } from "./sections/BannerSection";
 import { HomeFooter } from "./sections/HomeFooter";
-import { useSmoothScroll } from "./hooks/useSmoothScroll";
+import { useSmoothScroll } from "@/components/shared/hooks/useSmoothScroll";
 
 const Home = () => {
   useSmoothScroll();
