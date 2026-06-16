@@ -3,7 +3,6 @@
 import { Navbar } from "./sections/Navbar";
 import { Hero } from "./sections/Hero";
 import { ServicesSection } from "./sections/ServicesSection";
-import { Features } from "./sections/Features";
 import { Pricing } from "./sections/Pricing";
 import { CTA } from "./sections/CTA";
 import { Footer } from "./sections/Footer";
@@ -14,7 +13,6 @@ const Home = () => {
       <Navbar />
       <Hero />
       <ServicesSection />
-      <Features />
       <Pricing />
       <CTA />
       <Footer />
