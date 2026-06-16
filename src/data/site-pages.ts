@@ -5,7 +5,7 @@ export interface SitePage {
 }
 
 export const sitePages: SitePage[] = [
-  { id: "minimal", label: "Minimal", href: "/pages/minimal" },
-  { id: "bold", label: "Bold", href: "/pages/bold" },
-  { id: "glass", label: "Glass", href: "/pages/glass" },
+  { id: "minimal", label: "Minimal", href: "/minimal" },
+  { id: "bold", label: "Bold", href: "/bold" },
+  { id: "glass", label: "Glass", href: "/glass" },
 ];
