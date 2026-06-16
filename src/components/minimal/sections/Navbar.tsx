@@ -50,7 +50,7 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <DesignSwitcher current="minimal" theme="light" className="hidden sm:inline-flex" />
-          <Button className="rounded-xl px-5 h-9 text-sm">Get Started</Button>
+          <Button className="rounded-lg px-5 h-9 text-sm">Get Started</Button>
         </div>
       </div>
     </header>

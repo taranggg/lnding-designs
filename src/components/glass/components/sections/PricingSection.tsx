@@ -48,7 +48,7 @@ const PricingSection: React.FC = () => {
               </ul>
 
               <BlobButton
-                className="w-full mt-auto h-8 py-1 rounded-xl text-xs font-semibold !bg-[#111] !text-white !border-0 hover:!text-white"
+                className="w-full mt-auto h-8 py-1 rounded-lg text-xs font-semibold !bg-[#111] !text-white !border-0 hover:!text-white"
                 blobColor="bg-[#2563eb]"
               >
                 Get Started
@@ -99,7 +99,7 @@ const PricingSection: React.FC = () => {
 
               <div className="mt-auto">
                 <BlobButton
-                  className="w-full h-8 py-1 rounded-xl text-xs font-semibold !bg-white !text-[#1a56db] !border-0 hover:!text-white"
+                  className="w-full h-8 py-1 rounded-lg text-xs font-semibold !bg-white !text-[#1a56db] !border-0 hover:!text-white"
                   blobColor="bg-slate-800"
                 >
                   Get Started
@@ -151,7 +151,7 @@ const PricingSection: React.FC = () => {
               </ul>
 
               <BlobButton
-                className="w-full mt-auto h-8 py-1 rounded-xl text-xs font-semibold !bg-transparent border !border-white/30 !text-white hover:!text-white hover:!border-transparent"
+                className="w-full mt-auto h-8 py-1 rounded-lg text-xs font-semibold !bg-transparent border !border-white/30 !text-white hover:!text-white hover:!border-transparent"
                 blobColor="bg-[#2563eb]"
               >
                 Get Started

@@ -34,10 +34,10 @@ export const Hero = () => {
         </p>
 
         <div className="flex items-center gap-3 flex-wrap justify-center mt-2">
-          <Button className="rounded-xl px-8 h-11 text-sm">Get Started</Button>
+          <Button className="rounded-lg px-8 h-11 text-sm">Get Started</Button>
           <Button
             variant="default"
-            className="rounded-xl px-8 h-11 text-sm bg-slate-100/20 border border-slate-200 text-bg-foreground hover:bg-background "
+            className="rounded-lg px-8 h-11 text-sm bg-slate-100/20 border border-slate-200 text-bg-foreground hover:bg-background "
           >
             Learn More
           </Button>
