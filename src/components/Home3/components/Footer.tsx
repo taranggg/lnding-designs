@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { useState } from "react";
 import { RequestInviteModal } from "./invite/RequestInviteModal";
 import { BlobButton } from "./BlobButton";
@@ -65,25 +65,25 @@ export const Footer = () => {
               </span>
               <div className="flex items-center gap-6">
                 <Link
-                  to="/creator"
+                  href="/creator"
                   className="hover:text-white transition-colors"
                 >
                   Creator
                 </Link>
                 <Link
-                  to="/brand"
+                  href="/brand"
                   className="hover:text-white transition-colors"
                 >
                   Brand
                 </Link>
                 <Link
-                  to="/agency"
+                  href="/agency"
                   className="hover:text-white transition-colors"
                 >
                   Agency
                 </Link>
                 <Link
-                  to="/about"
+                  href="/about"
                   className="hover:text-white transition-colors"
                 >
                   About
@@ -91,25 +91,25 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-6">
                 <Link
-                  to="/legal/privacy"
+                  href="/legal/privacy"
                   className="hover:text-white transition-colors"
                 >
                   Privacy Policy
                 </Link>
                 <Link
-                  to="/legal/terms"
+                  href="/legal/terms"
                   className="hover:text-white transition-colors"
                 >
                   Terms of Service
                 </Link>
                 <Link
-                  to="/legal/cookies"
+                  href="/legal/cookies"
                   className="hover:text-white transition-colors"
                 >
                   Cookie Policy
                 </Link>
                 <Link
-                  to="/legal/refund"
+                  href="/legal/refund"
                   className="hover:text-white transition-colors"
                 >
                   Refund Policy

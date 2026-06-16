@@ -36,7 +36,7 @@ function InfluencerCard() {
                 transform: i === 1 ? "translateY(-12px)" : "none",
               }}
             >
-              <img src={src} alt="" className="w-8 h-8 object-contain" />
+              <img src={src.src} alt="" className="w-8 h-8 object-contain" />
             </div>
           ))}
         </div>

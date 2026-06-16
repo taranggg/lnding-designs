@@ -1,3 +1,5 @@
+"use client";
+
 import { Hero } from "./sections/Hero";
 import { FeaturesSection } from "./sections/FeaturesSection";
 import { TrustSection } from "./sections/TrustSection";

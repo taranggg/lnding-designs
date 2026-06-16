@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { ShinyButton } from "@/components/ui/shiny-button";
+import { ShinyButton } from "./ShinyButton";
 import { cn } from "@/lib/utils";
 
 // ─── Variants ────────────────────────────────────────────────────────────────

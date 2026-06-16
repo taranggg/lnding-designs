@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import footerData from "../data/footer.json";
 
 const SocialIcons: Record<string, React.FC<{ size?: number }>> = {
@@ -26,7 +26,7 @@ export const HomeFooter = () => {
 
         {/* Top row — logo + social icons */}
         <div className="flex items-center justify-between mb-8">
-          <Link to="/">
+          <Link href="/">
             <img
               src={footerData.logo}
               alt="LinkFluence"
@@ -62,7 +62,7 @@ export const HomeFooter = () => {
                 {col.links.map(({ label, href }) => (
                   <li key={href}>
                     <Link
-                      to={href}
+                      href={href}
                       className="text-[13px] text-[#666] hover:text-[#111] transition-colors leading-none"
                     >
                       {label}

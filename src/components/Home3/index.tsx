@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/sections/Hero";
 import { AboutSection } from "./components/sections/AboutSection";

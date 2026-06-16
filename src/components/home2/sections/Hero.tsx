@@ -121,7 +121,7 @@ export const Hero = () => {
                   }}
                 >
                   <img
-                    src={linkfluenceLogoFull}
+                    src={linkfluenceLogoFull.src}
                     alt="Campaign thumbnail"
                     className="w-full h-full object-contain p-4"
                     style={{ filter: "brightness(0) invert(1)" }}

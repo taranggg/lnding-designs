@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -42,28 +42,28 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
   const MobileNavLinks = () => (
     <div className="flex flex-col space-y-4 pt-4">
       <Link
-        to="/creator"
+        href="/creator"
         className="text-sm font-medium text-foreground hover:text-primary transition-colors"
         onClick={closeMobileMenu}
       >
         Creator
       </Link>
       <Link
-        to="/brand"
+        href="/brand"
         className="text-sm font-medium text-foreground hover:text-primary transition-colors"
         onClick={closeMobileMenu}
       >
         Brand
       </Link>
       <Link
-        to="/agency"
+        href="/agency"
         className="text-sm font-medium text-foreground hover:text-primary transition-colors"
         onClick={closeMobileMenu}
       >
         Agency
       </Link>
       <Link
-        to="/about"
+        href="/about"
         className="text-sm font-medium text-foreground hover:text-primary transition-colors"
         onClick={closeMobileMenu}
       >
@@ -90,11 +90,11 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
         >
           {/* Logo */}
           <Link
-            to="/"
+            href="/"
             className="flex items-center hover:opacity-80 transition-opacity flex-shrink-0"
           >
             <img
-              src={navbarLogo}
+              src={navbarLogo.src}
               alt="Logo"
               className="object-contain"
               style={{
@@ -110,25 +110,25 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
             style={{ opacity: secondFoldVisible ? 0.9 : 1 }}
           >
             <Link
-              to="/creator"
+              href="/creator"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
             >
               Creator
             </Link>
             <Link
-              to="/brand"
+              href="/brand"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
             >
               Brand
             </Link>
             <Link
-              to="/agency"
+              href="/agency"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
             >
               Agency
             </Link>
             <Link
-              to="/about"
+              href="/about"
               className="text-sm font-medium text-white/70 hover:text-white transition-colors whitespace-nowrap"
             >
               About
