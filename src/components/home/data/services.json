@@ -1,0 +1,66 @@
+{
+  "label": "SERVICES",
+  "heading": "What we offer?",
+  "accentColor": "#3b82f6",
+  "items": [
+    {
+      "title": "Influencer Marketing",
+      "description": "We have a team of 50+ specialists to ideate, execute, and deliver the desired outcomes for brands.",
+      "bullets": [
+        "Strategic creator partnerships",
+        "Creative inputs with seamless execution",
+        "Optimized costs",
+        "Comprehensive campaign reports"
+      ],
+      "accent": true,
+      "imageSlot": "influencer"
+    },
+    {
+      "title": "Digital IPs",
+      "description": "We develop original, creator-led shows for brands, to build stronger brand recall than short-form content. These IPs are built for entertainment, storytelling, and community engagement to help brands establish a deeper presence in the digital culture.",
+      "bullets": [
+        "Aligning with brand goals",
+        "Crafting engaging narratives",
+        "Strategic creator selection",
+        "Producing at scale"
+      ],
+      "accent": false,
+      "imageSlot": "digital-ips"
+    },
+    {
+      "title": "Talent Management",
+      "description": "We exclusively represent 120+ powerhouse creators across all categories in the digital ecosystem backing them from rising stars to household names.",
+      "bullets": [
+        "Direct access to top creators",
+        "Quicker and smoother executions",
+        "Stronger creator-brand alignment",
+        "Nation-wide influence across all niches & audiences"
+      ],
+      "accent": true,
+      "imageSlot": "talent"
+    },
+    {
+      "title": "Monk-E Studios",
+      "description": "A full-service creative production house delivering high-quality video content for brands and creators.",
+      "bullets": [
+        "Modular studio space for all your needs",
+        "Industry-grade equipment & skilled production crews",
+        "World-class editing suite",
+        "End-to-end production support"
+      ],
+      "accent": false,
+      "imageSlot": "studios"
+    }
+  ],
+  "digitalIpsBrands": [
+    "AJIO",
+    "Mtn Dew",
+    "Urban Co.",
+    "Licious",
+    "bbNow",
+    "Asian Paints",
+    "OnePlus",
+    "IKEA",
+    "Centrum"
+  ]
+}

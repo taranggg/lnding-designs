@@ -1,0 +1,23 @@
+{
+  "headline": {
+    "line1": "There is an intersection",
+    "line2": "between authentic craft and enduring influence.",
+    "accent": "We are the bridge."
+  },
+  "cta": [
+    {
+      "label": "Apply as Creator",
+      "type": "creator",
+      "baseColor": "#75a6c9",
+      "accentColor": "#1c1b1b",
+      "textColor": "#f5f2e6"
+    },
+    {
+      "label": "Apply as Brand",
+      "type": "brand",
+      "baseColor": "#1c1b1b",
+      "accentColor": "#75a6c9",
+      "textColor": "#f5f2e6"
+    }
+  ]
+}

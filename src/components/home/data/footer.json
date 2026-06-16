@@ -1,0 +1,39 @@
+{
+  "logo": "/linkfluence-logo.png",
+  "columns": [
+    {
+      "heading": "Product",
+      "links": [
+        { "label": "Creator", "href": "/creator" },
+        { "label": "Brand", "href": "/brand" },
+        { "label": "Agency", "href": "/agency" }
+      ]
+    },
+    {
+      "heading": "Company",
+      "links": [
+        { "label": "About", "href": "/about" },
+        { "label": "Support", "href": "/support" },
+        { "label": "FAQ", "href": "/faq" }
+      ]
+    },
+    {
+      "heading": "Legal",
+      "links": [
+        { "label": "Privacy Policy", "href": "/legal/privacy" },
+        { "label": "Terms of Service", "href": "/legal/terms" },
+        { "label": "Cookie Policy", "href": "/legal/cookies" },
+        { "label": "Refund Policy", "href": "/legal/refund" }
+      ]
+    }
+  ],
+  "social": [
+    { "name": "twitter", "href": "#" },
+    { "name": "linkedin", "href": "#" },
+    { "name": "instagram", "href": "#" }
+  ],
+  "copyright": {
+    "owner": "LinkFluence",
+    "rights": "All Rights Reserved."
+  }
+}

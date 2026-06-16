@@ -1,0 +1,154 @@
+.stickySection {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.sticky {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  box-sizing: border-box;
+}
+
+.stickyHeader {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  z-index: 10;
+}
+
+.headerContent {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.headerContent h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  text-shadow:
+    0 0 20px rgba(255, 255, 255, 0.45),
+    0 0 60px rgba(255, 255, 255, 0.2),
+    0 0 120px rgba(200, 220, 255, 0.12);
+}
+
+.descriptionText {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #a1a1aa;
+  white-space: nowrap;
+}
+
+.cardContainer {
+  display: flex;
+  width: 85%;
+  height: 60vh;
+  gap: 0px;
+  perspective: 1500px;
+}
+
+.card {
+  flex: 1;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.cardFace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: inherit;
+}
+
+.cardFront {
+  width: calc(100% + 1px);
+  background-size: 300% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card1 .cardFront {
+  background-position: left center;
+}
+.card2 .cardFront {
+  background-position: center center;
+}
+.card3 .cardFront {
+  background-position: right center;
+}
+
+.card1 {
+  border-radius: 20px 0 0 20px;
+}
+.card2 {
+  border-radius: 0px;
+}
+.card3 {
+  border-radius: 0 20px 20px 0;
+}
+
+/* --- THE BACK (The Content) --- */
+.cardBack {
+  width: 100%;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem;
+  box-sizing: border-box;
+  position: relative; /* Crucial for the light/noise layers */
+  overflow: hidden;
+
+  /* Adds a physical bevel edge to the card itself */
+  box-shadow:
+    inset 0px 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cardBack::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background-image: url("/grain.avif");
+  background-size: 150px;
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+
+  border-radius: inherit;
+}
+
+.cardBack::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 15%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+.cardBack > * {
+  position: relative;
+  z-index: 1;
+}

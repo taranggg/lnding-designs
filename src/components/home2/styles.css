@@ -1,0 +1,63 @@
+/* Required CSS variables + utility classes for the home2 sections.
+   Merge into the target project's global stylesheet (after @tailwind directives). */
+
+@layer base {
+    :root {
+        --background: oklch(1.0000 0 0);
+        --foreground: oklch(0.3211 0 0);
+        --card: oklch(1.0000 0 0);
+        --card-foreground: oklch(0.3211 0 0);
+        --primary: oklch(0.6231 0.1880 259.8145);
+        --primary-foreground: oklch(1.0000 0 0);
+        --muted: oklch(0.9846 0.0017 247.8389);
+        --muted-foreground: oklch(0.5510 0.0234 264.3637);
+        --destructive: oklch(0.6368 0.2078 25.3313);
+        --destructive-foreground: oklch(1.0000 0 0);
+        --border: oklch(0.9276 0.0058 264.5313);
+        --input: oklch(0.9276 0.0058 264.5313);
+        --ring: oklch(0.6231 0.1880 259.8145);
+        --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+    }
+}
+
+@layer components {
+    .gradient-text {
+        background: linear-gradient(90deg, #53a6ff 0%, #7b5cf6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .shadow-premium {
+        box-shadow: var(--shadow-lg);
+    }
+
+    .cta-double-underline {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 6px;
+        cursor: pointer;
+    }
+
+    .cta-double-underline::before,
+    .cta-double-underline::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1.5px;
+        background: white;
+    }
+
+    .cta-double-underline::after {
+        bottom: 0;
+    }
+
+    .cta-double-underline::before {
+        bottom: 5px;
+    }
+
+    .hover-lift {
+        @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-[1px];
+    }
+}
