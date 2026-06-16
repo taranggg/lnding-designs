@@ -106,7 +106,7 @@ export const Pricing = ({ highlightedRole, onApply }: PricingProps) => {
   );
 
   return (
-    <section className="py-24 px-6 bg-card">
+    <section className="py-24 px-6 bg-card" id="pricing">
       <div className="max-w-[1100px] mx-auto">
         {/* Header */}
         <div className="text-center mb-16 max-w-3xl mx-auto space-y-4">

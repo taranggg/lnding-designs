@@ -1,5 +1,6 @@
 "use client";
 
+import { Navbar } from "./sections/Navbar";
 import { Hero } from "./sections/Hero";
 import { FeaturesSection } from "./sections/FeaturesSection";
 import { TrustSection } from "./sections/TrustSection";
@@ -14,6 +15,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <Navbar />
       <main>
         <Hero />
         <div id="features">

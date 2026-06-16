@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { RequestInviteModal } from "./invite/RequestInviteModal";
 import { BlobButton } from "./BlobButton";
-import navbarLogo from "../assets/linkfluence-logo.png";
+import { DesignSwitcher } from "@/components/shared/DesignSwitcher";
 
 /**
  * Standalone homepage navbar — no auth/session wiring. Wire up `onSignInClick`
@@ -91,14 +91,14 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center hover:opacity-80 transition-opacity flex-shrink-0"
+            className="flex items-center hover:opacity-80 transition-opacity flex-shrink-0 rounded-lg bg-white px-2 py-1.5"
           >
             <img
-              src={navbarLogo.src}
+              src="/logoipsum-395.svg"
               alt="Logo"
               className="object-contain"
               style={{
-                height: secondFoldVisible ? "130px" : "150px",
+                height: secondFoldVisible ? "20px" : "24px",
                 transition: "height 0.5s ease",
               }}
             />
@@ -137,6 +137,7 @@ export const Navbar = ({ onSignInClick }: NavbarProps) => {
 
           {/* Right side */}
           <div className="flex items-center gap-2 flex-shrink-0">
+            <DesignSwitcher current="home3" theme="dark" className="hidden lg:inline-flex" />
             {/* Mobile menu */}
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild className="md:hidden">

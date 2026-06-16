@@ -9,7 +9,7 @@ import {
 
 export const ServicesSection: React.FC = () => {
   return (
-    <section className="py-16 px-4 md:px-8 bg-white">
+    <section className="py-16 px-4 md:px-8 bg-white" id="services">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8">
           <span className="text-sm font-mono text-gray-500">&gt; SERVICES</span>

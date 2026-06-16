@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { RequestInviteModal } from "./invite/RequestInviteModal";
 import { BlobButton } from "./BlobButton";
+import { Logo } from "@/components/shared/Logo";
 
 export const Footer = () => {
   const [inviteOpen, setInviteOpen] = useState(false);
@@ -59,10 +60,13 @@ export const Footer = () => {
 
           {/* Bottom bar pinned to card bottom */}
           <div className="absolute bottom-0 left-0 right-0 border-t border-white/10">
-            <div className="max-w-[1200px] mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
-              <span>
-                © {new Date().getFullYear()} Your Brand | All Rights Reserved.
-              </span>
+            <div className="max-w-300 mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+              <div className="flex items-center gap-4">
+                <Logo variant="dark" />
+                <span>
+                  © {new Date().getFullYear()} Your Brand | All Rights Reserved.
+                </span>
+              </div>
               <div className="flex items-center gap-6">
                 <Link
                   href="/creator"

@@ -8,7 +8,7 @@ export const BannerSection = () => {
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
           {/* Depth layer: blurred, offset shadow beneath */}
           <img
-            src="/svgs/logo.svg"
+            src="/linkfluence-logo.png"
             alt=""
             aria-hidden="true"
             style={{
@@ -22,7 +22,7 @@ export const BannerSection = () => {
           />
           {/* Main layer */}
           <img
-            src="/svgs/logo.svg"
+            src="/linkfluence-logo.png"
             alt=""
             aria-hidden="true"
             style={{
